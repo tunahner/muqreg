@@ -6,13 +6,14 @@ const { parseZone } = require("moment");
 
 exports.run =  async (client, message, args) => {
   
-if(!['791914423026450442'].some(role => message.member.roles.cache.get(role)) && !message.member.hasPermission('ADMINISTRATOR')) 
+if(!['779144852125777921'].some(role => message.member.roles.cache.get(role)) && !message.member.hasPermission('ADMINISTRATOR')) 
 return message.reply(`Bu Komut İçin Yetkiniz Bulunmamaktadır.`) 
   
-const kız = message.guild.roles.cache.find(r => r.id === '791914472641789974')
-const kız2 = message.guild.roles.cache.find(r => r.id === '791914473594028042')
-const kayıtsız = message.guild.roles.cache.find(r => r.id === '791914476315082752')
-const savelogs = message.guild.channels.cache.find(c => c.id === '791914551649763368')
+const kız = message.guild.roles.cache.find(r => r.id === '779335332612931594')
+const kız2 = message.guild.roles.cache.find(r => r.id === '780243996743565342')
+const kız3 = message.guild.roles.cache.find(r => r.id === '780244452089921546')
+const kayıtsız = message.guild.roles.cache.find(r => r.id === '779362019458809886')
+const savelogs = message.guild.channels.cache.find(c => c.id === '779357273364496417')
 if(!kız) return message.channel.send('1.ci Kız rolü ayarlanmamış.')
 if(!kız2) return message.channel.send('2.ci Kız rolü ayarlanmamış.')
 if(!kayıtsız) return message.channel.send('Kayıtsız rolü ayarlanmamış')

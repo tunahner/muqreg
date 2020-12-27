@@ -118,7 +118,7 @@ client.login(ayarlar.token);
 //-----------------------GİRENE-ROL-VERME----------------------\\     STG
 
 client.on("guildMemberAdd", member => {
-  member.roles.add('UNREGISTER ID'); // UNREGİSTER ROLÜNÜN İDSİNİ GİRİN
+  member.roles.add('779362019458809886'); // UNREGİSTER ROLÜNÜN İDSİNİ GİRİN
 });
 
 //-----------------------GİRENE-ROL-VERME----------------------\\     STG
@@ -127,8 +127,8 @@ client.on("guildMemberAdd", member => {
 //-----------------------HOŞ-GELDİN-MESAJI----------------------\\     STG
 
 client.on("guildMemberAdd", member => {  
-    const kanal = member.guild.channels.cache.find(r => r.id === "KANAL ID");
-    const register = "<@&REGISTER YAPAN ROL ID>"
+    const kanal = member.guild.channels.cache.find(r => r.id === "779357273364496417");
+    const register = "<@&779144852125777921>"
     let user = client.users.cache.get(member.id);
     require("moment-duration-format");
       const kurulus = new Date().getTime() - user.createdAt.getTime();  
@@ -139,7 +139,7 @@ client.on("guildMemberAdd", member => {
     moment.locale("tr");
       const strigalog = new Discord.MessageEmbed()
       .setAuthor(member.guild.name)
-  .setDescription("**Hoşgeldin! <@" + member + "> Seninle \`" + member.guild.memberCount + "\` Kişiyiz.\n\nMüsait olduğunda Confirmed Odalarından Birine Geçip Kaydını Yaptırabilirsin. \n\n<@&771695296291668000> seninle ilgilenicektir. \n\nHesabın Oluşturulma Tarihi: " + moment(member.user.createdAt).format("`YYYY DD MMMM dddd`") +  "\n\n"  + kontrol + "\n\nTagımızı alarak ` STG ` bize destek olabilirsin.**\n")
+  .setDescription("**Hoşgeldin! <@" + member + "> Seninle \`" + member.guild.memberCount + "\` Kişiyiz.\n\nMüsait olduğunda Confirmed Odalarından Birine Geçip Kaydını Yaptırabilirsin. \n\n<@&779144852125777921> seninle ilgilenicektir. \n\nHesabın Oluşturulma Tarihi: " + moment(member.user.createdAt).format("`YYYY DD MMMM dddd`") +  "\n\n"  + kontrol + "\n\nTagımızı alarak ` ❖ ` bize destek olabilirsin.**\n")
    .setImage("https://i.pinimg.com/originals/2c/43/ac/2c43acd8c41ee853cf9fbb04960e4fa6.gif")
    kanal.send(strigalog)   
      kanal.send(register) 
@@ -152,7 +152,7 @@ client.on("guildMemberAdd", member => {
 
 client.on("userUpdate", async (oldUser, newUser) => {
   if (oldUser.username !== newUser.username) {
-  const tag = 'TAGINIZ'
+  const tag = '❖'
   const sunucu = 'SUNUCU ID'
   const kanal = 'KANAL ID'
   const rol = 'ROL ID'
