@@ -207,3 +207,77 @@ client.on("userUpdate", async (stg, yeni) => {
     } catch(err) { console.error(err) };
   };
 });
+  
+  
+client.on("message", message => {
+  if (message.content === "tag") {
+    message.channel.send("❖");
+  }
+});
+
+
+client.on("message", message => {
+  if (message.content === ".tag") {
+    message.channel.send("❖");
+  }
+});
+
+
+
+
+
+client.on("message", message => {
+  if (message.content === "TAG") {
+    message.channel.send("❖");
+  }
+});
+
+client.on("message", message => {
+  if (message.content === "sa") {
+    message.channel.send("Aleyküm Selam **Hoşgeldin**");
+  }
+});
+
+client.on("message", message => {
+  if (message.content === "Sa") {
+    message.channel.send("Aleyküm Selam **Hoşgeldin**");
+  }
+});
+
+client.on("message", message => {
+  if (message.content === "sA") {
+    message.channel.send("Aleyküm Selam **Hoşgeldin**");
+  }
+});
+
+client.on("message", message => {
+  if (message.content === "selamın aleyküm") {
+    message.channel.send("Aleyküm Selam **Hoşgeldin**");
+  }
+});
+
+client.on("message", message => {
+  if (message.content === "Selamın Aleyküm") {
+    message.channel.send("Aleyküm Selam **Hoşgeldin**");
+  }
+});
+
+client.on("message", message => {
+  if (message.content === "SA") {
+    message.channel.send("Aleyküm Selam **Hoşgeldin**");
+  }
+});
+
+client.on("message", message => {
+  if (message.content === "SA") {
+    message.channel.send("Aleyküm Selam **Hoşgeldin**");
+  }
+});
+
+client.on("message", message => {
+  if (message.content === "selam") {
+    message.channel.send("Aleyküm Selam **Hoşgeldin**");
+  }
+});
+
+client.login('token');
