@@ -15,9 +15,9 @@ module.exports = client => {
       client.user.username
     } ismi ile giriş yapıldı!`
   );
-  client.user.setStatus("invisible");
+  client.user.setStatus("dnd");
   var oyun = [
-    "STG V12 REG",
+    "Athena",
 
   ];
 

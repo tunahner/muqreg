@@ -67,7 +67,7 @@ const embed = new Discord.MessageEmbed()
 
 .setAuthor(message.guild.name, message.guild.iconURL({ dynamic: true }))
 .setDescription(`
-• <a:ucgen:790913881962840125> ${member}, ${message.author} Kişi Tarafından ${kız}, ${kız2} Olarak Kayıt Edildi <a:ucgen:790913881962840125>
+• <a:ucgen:790913881962840125> ${member}, ${message.author} Kişi Tarafından ${kız}, ${kız2}, ${kız3},  Olarak Kayıt Edildi <a:ucgen:790913881962840125>
 
 • <a:greenbrave:790913930678763550> İsmi \`${tag} ${name} | ${age}\` Olarak Güncellendi.
 
@@ -77,6 +77,28 @@ const embed = new Discord.MessageEmbed()
 .setThumbnail(
   ""
 );
-const kanal = message.guild.channels.cache.find(c => c.id === '789868993166704685')
+const kanal = message.guild.channels.cache.find(c => c.id === '779357680892379167')
 kanal.send(`<@${member.user.id}>, **Aramıza Yeni Biri Katıldı Herkes Hoşgeldin Desin <a:onayli:790913919543541770>**`)
 message.channel.send(embed)
+
+datab.push(`isim.${message.guild.id}`, {
+  userID: member.id, 
+  isim: name,
+  yas: age,
+  tag: tag
+})
+
+}
+
+exports.conf = {
+    enabled: true,
+    guildOnly: true,
+    aliases: ['kadın', 'k', 'girl', 'kız'],
+    permLevel: 0
+  }
+
+  exports.help = {
+    name: 'kadın',
+    description: "Etiketlenen kişiyi erkek rolleriyle kayıt eder.",
+    usage: '.kadın @etiket/id İsim Yaş'
+  }

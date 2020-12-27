@@ -68,7 +68,7 @@ const embed = new Discord.MessageEmbed()
 
 .setAuthor(message.guild.name, message.guild.iconURL({ dynamic: true }))
 .setDescription(`
-• <a:ucgen:790913881962840125>  ${member}, ${message.author} Kişi Tarafından ${erkek}, ${erkek2} Olarak Kayıt Edildi <a:ucgen:790913881962840125> 
+• <a:ucgen:790913881962840125>  ${member}, ${message.author} Kişi Tarafından ${erkek}, ${erkek2}, ${erkek3}, Olarak Kayıt Edildi <a:ucgen:790913881962840125> 
 
 • <a:greenbrave:790913930678763550>  İsmi \`${tag} ${name} | ${age}\` Olarak Güncellendi.
 

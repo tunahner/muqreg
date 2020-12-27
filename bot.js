@@ -153,9 +153,9 @@ client.on("guildMemberAdd", member => {
 client.on("userUpdate", async (oldUser, newUser) => {
   if (oldUser.username !== newUser.username) {
   const tag = '❖'
-  const sunucu = 'SUNUCU ID'
-  const kanal = 'KANAL ID'
-  const rol = 'ROL ID'
+  const sunucu = '779140099815374848'
+  const kanal = '792855799340597268'
+  const rol = '779485419191402556'
 
   try {
 
@@ -183,11 +183,11 @@ console.log(`Bir hata oluştu! ${e}`)
 //-----------------------OTO-TAG-----------------------\\     STG
 
 client.on("userUpdate", async (stg, yeni) => {
-  var sunucu = client.guilds.cache.get('SUNUCU ID'); // Buraya Sunucu ID
+  var sunucu = client.guilds.cache.get('779140099815374848'); // Buraya Sunucu ID
   var uye = sunucu.members.cache.get(yeni.id);
-  var tag = ""; // Buraya Ekip Tag
-  var tagrol = ""; // Buraya Ekip Rolünün ID
-  var kanal = ""; // Loglanacağı Kanalın ID
+  var tag = "❖"; // Buraya Ekip Tag
+  var tagrol = "779485419191402556"; // Buraya Ekip Rolünün ID
+  var kanal = "792855799340597268"; // Loglanacağı Kanalın ID
 
   if (!sunucu.members.has(yeni.id) || yeni.bot || stg.username === yeni.username) return;
   
